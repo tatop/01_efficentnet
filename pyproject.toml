@@ -1,0 +1,27 @@
+[project]
+name = "01-efficentnet"
+version = "0.1.0"
+description = "Simple EfficientNet implementation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "argparse>=1.4.0",
+    "matplotlib>=3.10.1",
+    "notebook>=7.3.3",
+    "torch>=2.6.0",
+    "torchaudio>=2.6.0",
+    "torchinfo>=1.8.0",
+    "torchvision>=0.21.0",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.1",
+]
+
+[tool.ruff.format]
+exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+exclude = ["*.ipynb"]
